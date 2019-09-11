@@ -103,3 +103,16 @@ do
     done
 done
 ```
+You will need to download xterm for this script to work:
+
+```
+sudo apt-get install xterm
+```
+now you can make your script executable and run it:
+
+```
+sudo chmod +x blank_gap_script.sh
+./blank_gap_script.sh
+```
+
+
