@@ -114,5 +114,22 @@ now you can make your script executable and run it:
 sudo chmod +x blank_gap_script.sh
 ./blank_gap_script.sh
 ```
+If you run into an error on the start of the second video run these commands:
 
+```
+sudo apt-get update
+sudo apt-get upgrade
+```
+so you can update the list of available packages and their versions and install newer versions of the packages installed.
 
+Now you can run again the script:
+
+```
+cd ~/Desktop/scripts
+./blank_gap_script.sh
+```
+As you can see there is still the delay between the videos but instead of seeing the desktop anytime a new video starts you now see a black screen.
+
+I chose the <b>Method 1</b> because of the really small gap even though I will need to merge my videos into one.
+
+<h2>Remote Access</h2>
