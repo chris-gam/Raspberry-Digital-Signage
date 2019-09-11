@@ -44,15 +44,61 @@ You will notice the "Seek" text at the bottom of the screen, if you want this re
 ```
 omxplayer --loop --no-osd -o hdmi video1.mp4 
 ```
+This method is good enough and there is no gap when the video plays again but you can use only one video for this.
+You could merge you videos into one and you are ready to go.
+
+If you are not able to merge the videos you can write a script and play every video there is in your videos folder:
+
+Create the script file:
+
+```
+cd ~/Desktop
+mkdir scripts 
+cd /scripts
+sudo nano simple_script.sh
+```
+and paste the following code:
+
+```shell
+#!/bin/bash
+
+VIDEOPATH="/home/pi/Desktop/videos"
+while true;
+do
+  for videos in $VIDEOPATH/*
+    do
+      omxplayer $videos
+    done
+done
+
+```
+ctrl-x -> y -> enter to save.
+
+Make the file executable and run it:
+
+```
+sudo chmod +x simple_script.sh
+./simple_script.sh
+```
+You will notice the gap between the videos in which you can see your Desktop.
+I couldn't use this one so I made some changes to the script so the gap between the videos will show like a blank black screen.
+
+Go to your scripts folder and create a new script:
+
+```
+cd ~/Desktop/sripts
+sudo nano blank_gap_script.sh
+```
+Paste the following code:
 
 ```shell
 #!/bin/bash
 VIDEOPATH="/home/pi/Desktop/videos"
 while true; 
 do
-  for video in $VIDEOPATH/*
+  for videos in $VIDEOPATH/*
     do
-      xterm -fullscreen -fg white -bg black -e omxplayer -o hdmi -r "$video"
+      xterm -fullscreen -fg white -bg black -e omxplayer -o hdmi -r "$videos"
       xrefresh -display :0
     done
 done
