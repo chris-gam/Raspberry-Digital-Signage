@@ -137,3 +137,10 @@ I chose the <b>Method 1</b> because of the really small gap even though I will n
 What if you want to access your raspberry from another network ?
 
 For this task I used <a href="https://www.dataplicity.com/">Dataplicity</a>.
+
+You simply put your email in there and a curl command will show up like this:
+
+```
+curl https://www.dataplicity.com/your_id.py | sudo python
+```
+Run this command in your terminal.
