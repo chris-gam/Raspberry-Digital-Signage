@@ -5,7 +5,7 @@ You will need
 <ul>
   <li>Raspberry Pi</li>
   <li>HDMI cable</li>
-  <li>Micro SD Card (16gb should be fine)</li>
+  <li>Micro SD Card (16gb should be fine with enough room for some videos)</li>
   <li>Internet Connection</li>
   <li>Mouse/Keyboard</li>
   </ul>
@@ -133,3 +133,7 @@ As you can see there is still the delay between the videos but instead of seeing
 I chose the <b>Method 1</b> because of the really small gap even though I will need to merge my videos into one.
 
 <h2>Remote Access</h2>
+
+What if you want to access your raspberry from another network ?
+
+For this task I used <a href="https://www.dataplicity.com/">Dataplicity</a>.
