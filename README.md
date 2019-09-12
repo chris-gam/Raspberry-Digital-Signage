@@ -132,7 +132,9 @@ As you can see there is still the delay between the videos but instead of seeing
 
 I chose the <b>Method 1</b> because of the really small gap even though I will need to merge my videos into one.
 
-<h2>Remote Access</h2>
+<h2>Run on system startup</h2>
+
+<h3>Remote Access</h3>
 
 What if you want to access your raspberry from another network ?
 
