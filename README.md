@@ -134,6 +134,19 @@ I chose the <b>Method 1</b> because of the really small gap even though I will n
 
 <h2>Run on system startup</h2>
 
+For this task I used cron. Read about Cron <a href="https://www.raspberrypi.org/documentation/linux/usage/cron.md">here</a>.
+
+So just run the command:
+
+```
+crontab -e
+```
+and add your script's path, after @reboot, and you're good to go.
+
+```
+@reboot /path/to/script
+```
+
 <h3>Remote Access</h3>
 
 What if you want to access your raspberry from another network ?
