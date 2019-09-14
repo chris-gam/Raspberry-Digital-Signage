@@ -158,4 +158,5 @@ You simply put your email in there and a curl command will show up like this:
 ```
 curl https://www.dataplicity.com/your_id.py | sudo python
 ```
-Run this command in your terminal.
+Run this command in your terminal and wait until your device is linked, then you can go in you Dataplicity account (look in your mail to set a password first) from anywhere and have remote access over your Pi.
+
