@@ -68,7 +68,7 @@ while true;
 do
   for videos in $VIDEOPATH/*
     do
-      omxplayer $videos
+      omxplayer $videos >/dev/null
     done
 done
 
@@ -99,7 +99,7 @@ while true;
 do
   for videos in $VIDEOPATH/*
     do
-      xterm -fullscreen -fg white -bg black -e omxplayer -o hdmi -r "$videos"
+      xterm -fullscreen -fg white -bg black -e omxplayer -o hdmi -r "$videos" >/dev/null
       xrefresh -display :0
     done
 done
