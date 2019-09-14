@@ -144,7 +144,7 @@ crontab -e
 and add your script's path, after @reboot, and you're good to go.
 
 ```
-@reboot /path/to/script
+@reboot /full/path/to/script.sh
 ```
 
 <h3>Remote Access</h3>
