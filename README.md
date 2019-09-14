@@ -6,6 +6,7 @@ You will need
   <li>Raspberry Pi</li>
   <li>HDMI cable</li>
   <li>Micro SD Card (16gb should be fine with enough room for some videos)</li>
+  <li>Micro SD adapter</li>
   <li>Internet Connection</li>
   <li>Mouse/Keyboard</li>
   </ul>
