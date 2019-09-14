@@ -1,7 +1,7 @@
 # Raspberry-Digital-Signage
 A simple Digital Signage project with Raspberry Pi and Omxplayer
 
-You will need
+You will need:
 <ul>
   <li>Raspberry Pi</li>
   <li>HDMI cable</li>
@@ -13,7 +13,7 @@ You will need
   
   <h2>Installation</h2>
 
-You can download Raspbian from <a href="https://www.raspberrypi.org/downloads/"><b>here</b></a>.
+You can download Raspbian <a href="https://www.raspberrypi.org/downloads/"><b>here</b></a>.
 
 Read the <a href="https://www.raspberrypi.org/documentation/installation/installing-images/">tutorial</a> for installation info.
 
@@ -46,9 +46,9 @@ You will notice the "Seek" text at the bottom of the screen, if you want this re
 omxplayer --loop --no-osd -o hdmi video1.mp4 
 ```
 This method is good enough and there is no gap when the video plays again but you can use only one video for this.
-You could merge you videos into one and you are ready to go.
+You could merge your videos into one and you are ready to go.
 
-If you are not able to merge the videos you can write a script and play every video there is in your videos folder:
+If you are not able to merge the videos, you can write a script and play every video there is in your videos folder:
 
 Create the script file:
 
@@ -129,9 +129,9 @@ Now you can run again the script:
 cd ~/Desktop/scripts
 ./blank_gap_script.sh
 ```
-As you can see there is still the delay between the videos but instead of seeing the desktop anytime a new video starts you now see a black screen.
+As you can see there is still the delay between the videos, but instead of seeing the desktop anytime a new video starts, you now see a black screen.
 
-I chose the <b>Method 1</b> because of the really small gap even though I will need to merge my videos into one.
+I chose the <b>Method 1</b> because of the really small gap, even though I will need to merge my videos into one.
 
 <h2>Run on system startup</h2>
 
@@ -142,7 +142,7 @@ So just run the command:
 ```
 crontab -e
 ```
-and add your script's path, after @reboot, and you're good to go.
+add your script's path, after @reboot, and you're good to go.
 
 ```
 @reboot /full/path/to/script.sh
