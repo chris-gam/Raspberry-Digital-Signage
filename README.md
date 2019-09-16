@@ -161,3 +161,10 @@ curl https://www.dataplicity.com/your_id.py | sudo python
 ```
 Run this command in your terminal and wait until your device is linked, then you can go in you Dataplicity account (look in your mail to set a password first) from anywhere and have remote access over your Pi.
 
+
+If you want to use <b>Method 1</b> as the go to method you can add to your cronjob:
+
+```
+@reboot omxplayer --loop --no-osd -o hdmi full/path/to/video
+```
+
