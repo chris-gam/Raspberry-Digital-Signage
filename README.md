@@ -26,6 +26,7 @@ You can do this via the Raspberry terminal:
 ```
 cd ~/Desktop
 mkdir videos
+cd videos
 wget http:/link-to-video1.mp4 && wget http:/link-to-video2.mp4
 ```
 The OMXPlayer works like this:
